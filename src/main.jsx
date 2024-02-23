@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-// TODO: Module-1 , createElement returns simple JS object
+// TODO: Module-1 , React.createElement returns simple JS object
 
 // const element = React.createElement("div", { id: "box" }, "this is the box");
 

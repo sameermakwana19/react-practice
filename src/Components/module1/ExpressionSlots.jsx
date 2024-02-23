@@ -1,7 +1,8 @@
 import React from "react";
 
 const ExpressionSlots = () => {
-  const arr = [1, 2, 3, 4, 5, 6, 7];
+  const arr = [1, 2, 3, 4, 5, 7, 6];
+  const count = 5;
 
   return (
     <>
@@ -14,6 +15,8 @@ const ExpressionSlots = () => {
           <span key={index}>{item}-</span>
         ))}
       </div>
+      {/*white space  */}
+      <span>Count :</span> {count}
     </>
   );
 };

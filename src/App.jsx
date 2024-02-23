@@ -3,6 +3,16 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import ExpressionSlots from "./Components/module1/ExpressionSlots";
+import Exercise7 from "./Components/module1/Exercise7";
+import Exercise7_1 from "./Components/module1/Exercise7_1";
+import FriendlyGreeting from "./Components/module1/FriendlyGreeting";
+import ContactCard from "./Components/module1/ContactCard";
+import Button from "./Components/module1/Button";
+import Mapping from "./Components/module1/Mapping";
+import Keys from "./Components/module1/Keys";
+import ShoppingCart from "./Components/module1/ShoppingCart";
+import ConditionalRendering from "./Components/module1/ConditionalRendering";
+import Grid from "./Components/module1/Grid";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,7 +43,34 @@ function App() {
   */}
       {/* <h1>hello</h1> */}
 
-      <ExpressionSlots />
+      {/* <ExpressionSlots /> */}
+
+      {/* <Exercise7 /> */}
+
+      {/* <Exercise7_1  */}
+
+      {/* <FriendlyGreeting name="sameer" /> */}
+      {/* <FriendlyGreeting name="chirag" /> */}
+
+      {/* <ContactCard name="sam" job="eng" email="abc.com" />
+      <ContactCard name="john" job="sr.eng" email="pqr.com" />
+      <ContactCard name="ram" job="jr.eng" email="xyz.com" /> */}
+
+      {/* <Button status="cancel">Cancel</Button>
+      <Button status="confirm">Submit</Button>
+      <Button>Normal</Button> */}
+
+      {/* <Mapping /> */}
+
+      {/* <Keys /> */}
+      {/* <ShoppingCart /> */}
+
+      {/* <ConditionalRendering /> */}
+      <Grid rows={5} cols={7} />
+      <hr />
+      <Grid rows={4} />
+      <hr />
+      <Grid />
     </>
   );
 }
