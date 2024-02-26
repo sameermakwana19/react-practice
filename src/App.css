@@ -47,3 +47,17 @@ div {
 .read-the-docs {
   color: #888;
 }
+button {
+  margin: 5px;
+}
+button:disabled {
+  background-color: black;
+  color: white;
+  cursor: not-allowed;
+}
+select,
+input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}

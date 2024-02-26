@@ -3,16 +3,16 @@ import React from "react";
 const Grid = ({ rows = 2, cols = 2 }) => {
   const rowsArr = new Array(rows);
   rowsArr.fill(0);
-  let colsArr = new Array(cols);
+  const colsArr = new Array(cols);
   colsArr.fill(0);
   console.log(rowsArr, rows);
   console.log(colsArr, cols);
 
   return (
     <>
-      {rowsArr.map((item) => (
+      {rowsArr.map(() => (
         <div className="row" style={{ background: "goldenrod" }}>
-          {colsArr.map((item) => (
+          {colsArr.map((item, index) => (
             <div
               style={{
                 display: "inline-block",
@@ -22,7 +22,7 @@ const Grid = ({ rows = 2, cols = 2 }) => {
                 color: "black",
               }}
             >
-              cols
+              cols{` ${index + 1}`}
             </div>
           ))}
         </div>

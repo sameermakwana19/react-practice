@@ -1,6 +1,14 @@
 import React from "react";
 
-const Button = ({ status = "default", children }) => {
+const Button = ({
+  status = "default",
+  handleClick = (e) => {
+    e.preventDefault();
+    console.log(e.target);
+  },
+  isEnabled,
+  children,
+}) => {
   // let themeColor;
   // if (status === "cancel") {
   //   themeColor = "red";
@@ -30,7 +38,9 @@ const Button = ({ status = "default", children }) => {
 
   return (
     <>
-      <button style={style}>{children}</button>
+      <button style={style} onClick={handleClick} disabled={!isEnabled}>
+        {children}
+      </button>
     </>
   );
 };

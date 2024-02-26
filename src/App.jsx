@@ -13,6 +13,19 @@ import Keys from "./Components/module1/Keys";
 import ShoppingCart from "./Components/module1/ShoppingCart";
 import ConditionalRendering from "./Components/module1/ConditionalRendering";
 import Grid from "./Components/module1/Grid";
+import ClickEvent from "./Components/module2/ClickEvent";
+import AsychStateBeh from "./Components/module2/AsychStateBeh";
+import Counter1 from "./Components/module2/Counter1";
+import Counter2 from "./Components/module2/Counter2";
+import StateVsVar from "./Components/module2/StateVsVar";
+import Form1 from "./Components/module2/Form1";
+import Form2 from "./Components/module2/Form2";
+import FormControls from "./Components/module2/FormControls";
+import Countries from "./Components/module2/Countries";
+import CodeExercise from "./Components/module2/CodeExercise";
+import PropsVSState from "./Components/module2/PropsVSState";
+import ColorPicker from "./Components/module2/ColorPicker";
+import DynamicKeyGeneration from "./Components/module2/DynamicKeyGeneration";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -66,11 +79,33 @@ function App() {
       {/* <ShoppingCart /> */}
 
       {/* <ConditionalRendering /> */}
-      <Grid rows={5} cols={7} />
+
+      {/* Grid Component */}
+      {/* <Grid rows={5} cols={7} />
       <hr />
       <Grid rows={4} />
       <hr />
-      <Grid />
+      <Grid /> */}
+
+      {/* <ClickEvent /> */}
+
+      {/* <AsychStateBeh /> */}
+      {/* <Counter1 /> */}
+
+      {/* <Counter2 /> */}
+
+      {/* <StateVsVar /> */}
+      {/* <Form1 /> */}
+      {/* <Form2 /> */}
+
+      {/* <FormControls /> */}
+      {/* <Countries /> */}
+      {/* <CodeExercise /> */}
+      {/* <PropsVSState /> */}
+
+      {/* <ColorPicker /> */}
+
+      <DynamicKeyGeneration />
     </>
   );
 }
