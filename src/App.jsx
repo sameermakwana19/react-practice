@@ -26,6 +26,8 @@ import CodeExercise from "./Components/module2/CodeExercise";
 import PropsVSState from "./Components/module2/PropsVSState";
 import ColorPicker from "./Components/module2/ColorPicker";
 import DynamicKeyGeneration from "./Components/module2/DynamicKeyGeneration";
+import LiftingState from "./Components/module2/LiftingState";
+import BigApp from "./Components/module2/BigCoin/BigApp";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -105,7 +107,10 @@ function App() {
 
       {/* <ColorPicker /> */}
 
-      <DynamicKeyGeneration />
+      {/* <DynamicKeyGeneration /> */}
+
+      {/* <LiftingState /> */}
+      <BigApp />
     </>
   );
 }

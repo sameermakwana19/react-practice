@@ -8,12 +8,12 @@ const DynamicKeyGeneration = () => {
   const [data, setData] = useState([]);
 
   function getData() {
-    setNum(num + 1);
     let newItem = {
       name: countries[num],
       id: crypto.randomUUID(),
     };
     const newData = [...data, newItem];
+    setNum(num + 1);
     setData(newData);
     // return countries[num];
   }
