@@ -15,9 +15,9 @@ const AsychStateBeh = () => {
     <>
       <button
         onClick={() => {
-          setUser(null); //will take of not of it , update the state in the next render , and continue working in the current render
-          setStatus("initial");
-          setConfMsg("Log out successfully");
+          setUser(null); //will take a note of it , update the state in the next render , and continue working in the current render
+          setStatus("initial"); //will take a note of it , update the state in the next render , and continue working in the current render
+          setConfMsg("Log out successfully"); //will take a note of it , update the state in the next render , and continue working in the current render
           console.log(user, status, confMsg);
         }}
       >

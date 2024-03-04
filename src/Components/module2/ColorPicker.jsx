@@ -4,48 +4,48 @@ const ColorPicker = () => {
   const initial = ["#ffceae", "#ffbced", "#ffbced", "#ffbced", "#ffbced"];
   const [allow, setAllow] = useState(true);
   const [colors, setColors] = useState(initial);
-  const colorText = colors.join(", ");
+  // const colorText = colors.join(", ");
 
   // remembering the previous value.
-  // const [visibleColorsNumber, setVisibleColorsNumber] = useState(2);
-  // const visibleColor = colors.slice(0, visibleColorsNumber);
-  // const colorText = visibleColor.join(", ");
+  const [visibleColorsNumber, setVisibleColorsNumber] = useState(2);
+  const visibleColor = colors.slice(0, visibleColorsNumber);
+  const colorText = visibleColor.join(", ");
 
   function addColor(e) {
     e.preventDefault();
-    if (colors.length >= 5) {
-      setAllow(false);
-      return;
-    }
-
-    // if (visibleColorsNumber === 5) {
+    // if (colors.length >= 5) {
+    //   setAllow(false);
     //   return;
     // }
-    setAllow(true);
-    const newArr = [...colors];
-    newArr.push("#ff9922");
-    setColors(newArr);
 
-    // setVisibleColorsNumber(visibleColorsNumber + 1);
+    if (visibleColorsNumber === 5) {
+      return;
+    }
+    // setAllow(true);
+    // const newArr = [...colors];
+    // newArr.push("#ff9922");
+    // setColors(newArr);
+
+    setVisibleColorsNumber(visibleColorsNumber + 1);
   }
 
   function removeColor(e) {
     e.preventDefault();
-    if (colors.length <= 2) {
-      setAllow(false);
-      return;
-    }
-
-    // if (visibleColorsNumber === 2) {
+    // if (colors.length <= 2) {
+    //   setAllow(false);
     //   return;
     // }
 
-    setAllow(true);
-    const newArr = [...colors];
-    newArr.length = newArr.length - 1;
-    setColors(newArr);
+    if (visibleColorsNumber === 2) {
+      return;
+    }
 
-    // setVisibleColorsNumber(visibleColorsNumber - 1);
+    // setAllow(true);
+    // const newArr = [...colors];
+    // newArr.length = newArr.length - 1;
+    // setColors(newArr);
+
+    setVisibleColorsNumber(visibleColorsNumber - 1);
   }
 
   return (
@@ -58,11 +58,11 @@ const ColorPicker = () => {
         }}
       ></div>
       <form action="">
-        {colors.map((item, index) => {
-          {
-            /* {visibleColor.map((item, index) => { */
-            // console.log(item);
-          }
+        {/* {colors.map((item, index) => { */}
+        {/* { */}
+        {visibleColor.map((item, index) => {
+          // console.log(item);
+          // }
           return (
             <input
               key={`color-${index}`}

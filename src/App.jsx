@@ -28,6 +28,26 @@ import ColorPicker from "./Components/module2/ColorPicker";
 import DynamicKeyGeneration from "./Components/module2/DynamicKeyGeneration";
 import LiftingState from "./Components/module2/LiftingState";
 import BigApp from "./Components/module2/BigCoin/BigApp";
+import UseId from "./Components/Hooks/useID/UseId";
+import RulesOfHooks from "./Components/Hooks/useID/RulesOfHooks";
+import UseRef from "./Components/Hooks/useRef/UseRef";
+import Exercise from "./Components/Hooks/useRef/Exercise";
+import UseEffect from "./Components/Hooks/useEffect/UseEffect";
+import Exercise1_UseEffect from "./Components/Hooks/useEffect/Exercise1_UseEffect";
+import EventListeners from "./Components/Hooks/useEffect/EventListeners";
+import Exercise2_UseEffect from "./Components/Hooks/useEffect/Exercise2_UseEffect";
+import CleanUpFunction from "./Components/Hooks/useEffect/CleanUpFunction";
+import CleanUp_dependency from "./Components/Hooks/useEffect/CleanUp_dependency";
+import Clock from "./Components/Hooks/useEffect/Clock";
+import CheckBox from "./Components/Hooks/useEffect/CheckBox";
+import Test from "./Components/Hooks/useEffect/Test";
+import Custom_hook from "./Components/Hooks/Custom_Hook/Custom_hook";
+import ObserverDemo from "./Components/Hooks/Custom_Hook/ObserverDemo";
+import FormData from "./Components/Hooks/Fetching Data/FormData";
+import SWR_DEMO from "./Components/Hooks/Fetching Data/SWR_DEMO";
+import Exercise1_fetchingData from "./Components/Hooks/Fetching Data/Exercise1_fetchingData";
+import Exercise2_fetchingData from "./Components/Hooks/Fetching Data/Exercise2_fetchingData";
+import MemoExample from "./Components/Hooks/memoization/MemoExample";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -110,7 +130,39 @@ function App() {
       {/* <DynamicKeyGeneration /> */}
 
       {/* <LiftingState /> */}
-      <BigApp />
+      {/* <BigApp /> */}
+
+      {/* <UseId /> */}
+      {/* <RulesOfHooks  /> */}
+
+      {/* <UseRef /> */}
+      {/* <Exercise /> */}
+      {/* <UseEffect /> */}
+      {/* <Exercise1_UseEffect /> */}
+      {/* <EventListeners /> */}
+      {/* <Exercise2_UseEffect /> */}
+
+      {/* <CleanUpFunction /> */}
+      {/* <CleanUp_dependency /> */}
+
+      {/* <Clock /> */}
+      {/* <CheckBox /> */}
+      {/* <Test /> */}
+
+      {/* <Custom_hook /> */}
+
+      {/* <ObserverDemo /> */}
+
+      {/* DATA FETCHING  SECTION*/}
+      {/* <FormData /> */}
+
+      {/* <SWR_DEMO /> */}
+
+      {/* <Exercise1_fetchingData /> */}
+      {/* <Exercise2_fetchingData /> */}
+
+      {/* Memoization demo */}
+      <MemoExample />
     </>
   );
 }

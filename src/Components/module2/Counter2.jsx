@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const Counter2 = ({ initialValue = 99 }) => {
-  const [count, setCount] = useState(initialValue);
+const Counter2 = ({ initialValue = 99, count, setCount }) => {
+  // const [count, setCount] = useState(initialValue);
 
   return (
     <>

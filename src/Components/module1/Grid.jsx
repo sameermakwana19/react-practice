@@ -5,8 +5,10 @@ const Grid = ({ rows = 2, cols = 2 }) => {
   rowsArr.fill(0);
   const colsArr = new Array(cols);
   colsArr.fill(0);
-  console.log(rowsArr, rows);
-  console.log(colsArr, cols);
+  // console.log(rowsArr, rows);
+  // console.log(colsArr, cols);
+
+  console.log("grid component rendered");
 
   return (
     <>
@@ -31,4 +33,5 @@ const Grid = ({ rows = 2, cols = 2 }) => {
   );
 };
 
-export default Grid;
+// export default Grid;
+export default React.memo(Grid);

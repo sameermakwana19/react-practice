@@ -5,9 +5,9 @@ const Form1 = () => {
 
   return (
     <>
-      {/* in HTML value set the initial value for input and allow us to change but in react value works little bit differently , in react - value attr lock the value to string and prevent us from changing   */}
+      {/* in HTML, value attribute  set the initial value for input and allow us to change but in react value works little bit differently , in react - value attr lock the value to string and prevent us from changing   */}
 
-      {/* by set the value equal to state , it lock the input field value to state value ,which prevents us from change the value in the input field (if no onChange listener is add to change the state value) */}
+      {/* by setting the value equal to state , it lock the input field value to state value ,which prevents us from change the value in the input field (if no onChange listener is add to change the state value) */}
 
       {/* one way data binding { onChange ={()=>  setState(e.target.value)} } -- only adding onchange event listener on input , which will change the value of the state but if doesn't lock the value of the input then it won't reflect the new state value in the input field */}
 
