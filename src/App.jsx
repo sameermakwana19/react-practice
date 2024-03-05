@@ -48,6 +48,15 @@ import SWR_DEMO from "./Components/Hooks/Fetching Data/SWR_DEMO";
 import Exercise1_fetchingData from "./Components/Hooks/Fetching Data/Exercise1_fetchingData";
 import Exercise2_fetchingData from "./Components/Hooks/Fetching Data/Exercise2_fetchingData";
 import MemoExample from "./Components/Hooks/memoization/MemoExample";
+import Memo_Demo from "./Components/Hooks/memoization/Memo_Demo";
+import UseMemo from "./Components/Hooks/memoization/UseMemo";
+import UseMemo2 from "./Components/Hooks/memoization/UseMemo2";
+import UseCallback from "./Components/Hooks/memoization/UseCallback";
+import Banner from "./Components/ComponentDesign/ComponentSpectrum/Banner";
+import VerifiedUserBanner from "./Components/ComponentDesign/ComponentSpectrum/VerifiedUserBanner";
+import User from "./Components/ComponentDesign/ComponentSpectrum/User";
+import PropsDelagation from "./Components/ComponentDesign/PropsDelagation/PropsDelagation";
+import SliderExercise from "./Components/ComponentDesign/PropsDelagation/SliderExercise";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -162,7 +171,23 @@ function App() {
       {/* <Exercise2_fetchingData /> */}
 
       {/* Memoization demo */}
-      <MemoExample />
+      {/* <MemoExample /> */}
+      {/* <Memo_Demo /> */}
+
+      {/* <UseMemo /> */}
+      {/* <UseMemo2 /> */}
+
+      {/* <UseCallback /> */}
+
+      {/* Module 4 - Component Design */}
+
+      {/* <Banner type="success">Successfully LoggedIn!</Banner>
+      <Banner type="warning">Don't share OTP with anyone.</Banner>
+      <Banner type="error">Sign In failed !</Banner>
+      <User /> */}
+
+      {/* <PropsDelagation /> */}
+      <SliderExercise />
     </>
   );
 }

@@ -1,6 +1,11 @@
 import React from "react";
 
 const Grid = ({ rows = 2, cols = 2 }) => {
+  if (rows < 1 || cols < 1) {
+    rows = 1;
+    cols = 1;
+  }
+
   const rowsArr = new Array(rows);
   rowsArr.fill(0);
   const colsArr = new Array(cols);
@@ -12,10 +17,11 @@ const Grid = ({ rows = 2, cols = 2 }) => {
 
   return (
     <>
-      {rowsArr.map(() => (
-        <div className="row" style={{ background: "goldenrod" }}>
+      {rowsArr.map((_, index) => (
+        <div className="row" key={index} style={{ background: "goldenrod" }}>
           {colsArr.map((item, index) => (
             <div
+              key={index}
               style={{
                 display: "inline-block",
                 padding: "10px",

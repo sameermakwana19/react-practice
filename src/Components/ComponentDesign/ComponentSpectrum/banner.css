@@ -1,0 +1,16 @@
+.banner {
+  font-size: 18px;
+  color: black;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  text-align: center;
+  min-width: 600px;
+  width: 100%;
+  margin: 0.5rem auto;
+}
+
+.verified {
+  border-radius: 50px;
+}
