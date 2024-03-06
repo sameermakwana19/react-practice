@@ -7,12 +7,7 @@ const PropsDelagation = () => {
       <h2>PropsDelagation</h2>
       <hr />
       <form action="">
-        <TextInput
-          label={"Email"}
-          type={"email"}
-          required={true}
-          maxLength={9}
-        />
+        <TextInput label={"Email"} type={"email"} required maxLength={9} />
         <br />
         <TextInput
           label={"password"}

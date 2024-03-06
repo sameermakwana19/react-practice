@@ -57,6 +57,12 @@ import VerifiedUserBanner from "./Components/ComponentDesign/ComponentSpectrum/V
 import User from "./Components/ComponentDesign/ComponentSpectrum/User";
 import PropsDelagation from "./Components/ComponentDesign/PropsDelagation/PropsDelagation";
 import SliderExercise from "./Components/ComponentDesign/PropsDelagation/SliderExercise";
+import DarkModePractice from "./Components/DarkModePractice";
+import RefDemo from "./Components/ComponentDesign/Ref Forwarding/RefDemo";
+import ForwardRefExercise1 from "./Components/ComponentDesign/Ref Forwarding/ForwardRefExercise1";
+import PolymorphismDemo from "./Components/ComponentDesign/Polymorphism/PolymorphismDemo";
+import ExercisePolymorphism1 from "./Components/ComponentDesign/Polymorphism/ExercisePolymorphism1";
+import ContextDemo from "./Components/ComponentDesign/Context/ContextDemo";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -187,7 +193,20 @@ function App() {
       <User /> */}
 
       {/* <PropsDelagation /> */}
-      <SliderExercise />
+      {/* <SliderExercise /> */}
+
+      {/* forwardRef  demo */}
+      {/* <RefDemo /> */}
+      {/* <ForwardRefExercise1 /> */}
+
+      {/* Polymorphism Demo */}
+      {/* <PolymorphismDemo /> */}
+      <ExercisePolymorphism1 />
+
+      {/* Context Demo */}
+      {/* <ContextDemo /> */}
+
+      {/* <DarkModePractice /> */}
     </>
   );
 }
